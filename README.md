@@ -2,31 +2,19 @@
 
 **Author**: rula alqasem
 **Version**: 1.0.0
-
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
-
+This Apllication is for exploring location that displys a map for the selected location by the user, The reason for building this application is to fill users need by exploring location around the world.
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
-
+The user can use my URL that deployed on Netlify in order to use this application easily.
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
-
+I used API besides that I install thunder client extension in my VS code and I run this command (npm i react-Bootstrap Bootstrap axios) in order to use API effectivelly .
 ## Change Log
-
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
-
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
-
+05-03-2021 9:59pm - Application now has a fully-functional express server, with a GET route for the location resource.
 ## Credit and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
-
-Name of feature: ________________________________
-
-Estimate of time needed to complete: _____
-
-Start time: _____
-
-Finish time: _____
-
-Actual time needed to complete: _____
+1- [LocationIQ](https://locationiq.com/)
+2- [React Bootstrap](https://react-bootstrap.github.io/)
+## Name of feature: using API
+Estimate of time needed to complete: 3 hours
+Start time: 7 PM
+Finish time: 10 PM
+Actual time needed to complete: 3 hours
