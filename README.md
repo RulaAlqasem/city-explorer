@@ -18,3 +18,5 @@ Estimate of time needed to complete: 3 hours
 Start time: 7 PM
 Finish time: 10 PM
 Actual time needed to complete: 3 hours
+
+()[Request-Response Cycle I222.PNG]
