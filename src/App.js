@@ -35,7 +35,7 @@ export class App extends Component {
       })
     } catch (error) {
       console.log('erroooorrrr')
-      this.setState({ show: false, text:'add a real city' });
+      this.setState({ show: false, text:'ERROR, pleas add a Existing city' });
 
 
     }
@@ -59,11 +59,11 @@ export class App extends Component {
             </>
 
             :
-            <>
+           
 
 
               <p >{this.state.text}</p>
-            </>}
+           }
           <Footer />
         </div>
 
