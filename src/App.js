@@ -56,7 +56,9 @@ export class App extends Component {
             <>
               <ImgCard lat={this.state.data.lat} lon={this.state.data.lon} name={this.state.data.display_name} />
             </>
+
             : <p >{this.state.text}</p> }
+
           <Footer />
         </div>
 
