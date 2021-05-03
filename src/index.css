@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root {
+  text-align: center;
+
+}
+#root > div > div > label{
+  font-size: x-large;
+  font-weight: bolder;
+
+}
+#root > div > div > input{
+  width: 428px;
+  height: 30px;
+  margin-top: 14px;
+  
+  text-align: center;
+
+
+}
+#root > div > div > button{
+  width: 163px;
+  height: 37px;
+  margin-top: 10px;
+  font:x-large;
+  font-weight: bolder;
+
+}
+#root > div > p{
+  font:x-large;
+  font-weight: bolder;
+  color: red;
+}
+#root > div > h1{
+  color: aquamarine;
+  background-color: blue;
+  
+  margin-top: 0px;
+  height: 57px;
+
+}
