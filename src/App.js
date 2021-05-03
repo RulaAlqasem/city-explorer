@@ -54,16 +54,11 @@ export class App extends Component {
           <OurForm changLocation={this.changLocation} explore={this.explore} />
           {(this.state.show) ?
             <>
-
               <ImgCard lat={this.state.data.lat} lon={this.state.data.lon} name={this.state.data.display_name} />
             </>
 
-            :
-           
+            : <p >{this.state.text}</p> }
 
-
-              <p >{this.state.text}</p>
-           }
           <Footer />
         </div>
 
