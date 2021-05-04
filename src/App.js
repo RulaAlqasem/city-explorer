@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import axios from 'axios';
@@ -8,6 +9,8 @@ import ImgCard from './component/ImgCard'
 import OurForm from './component/OurForm';
 import Header from './component/Header';
 import Footer from './component/Footer';
+import Weather from './component/Weather';
+
 
 export class App extends Component {
   constructor(prop) {
@@ -16,7 +19,8 @@ export class App extends Component {
       location: '',
       data: '',
       show: false,
-      text:''
+      text:'',
+      weatherForm:[]
     }
   }
   changLocation = (event) => {
@@ -28,10 +32,15 @@ export class App extends Component {
     event.preventDefault();
     try {
       this.setState({ show: true });
-      let url = `https://us1.locationiq.com/v1/search.php?key=pk.107ac8c82afac7d3a6cb29ba677ba0c0&q=${this.state.location}&format=json`
+      let url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_IQ_KEY}&q=${this.state.location}&format=json`
       const request = await axios.get(url);
+      const myApi = `${process.env.REACT_APP_HOST}`
+      const showApi = await axios.get(myApi);
+      console.log(showApi.data);
+
       this.setState({
-        data: request.data[0]
+        data: request.data[0],
+        weatherForm:showApi.data
       })
     } catch (error) {
       console.log('erroooorrrr')
@@ -54,7 +63,11 @@ export class App extends Component {
           <OurForm changLocation={this.changLocation} explore={this.explore} />
           {(this.state.show) ?
             <>
+            
+
               <ImgCard lat={this.state.data.lat} lon={this.state.data.lon} name={this.state.data.display_name} />
+              <Weather weatherInfo={this.state.weatherForm}/>
+         
             </>
 
             : <p >{this.state.text}</p> }

@@ -16,7 +16,7 @@ code {
   text-align: center;
 
 }
-#root > div > div > label{
+/* #root > div > div > label{
   font-size: x-large;
   font-weight: bolder;
 
@@ -37,8 +37,8 @@ code {
   font:x-large;
   font-weight: bolder;
 
-}
-#root > div > p{
+} */
+/* #root > div > p{
   font:x-large;
   font-weight: bolder;
   color: red;
@@ -49,5 +49,30 @@ code {
   
   margin-top: 0px;
   height: 57px;
+
+} */
+/* #root > div:nth-child(2) > div.card > div > img{
+  margin-left: 426px;
+
+}*/
+.my-2{
+  justify-content: center;
+
+
+} 
+#root > div:nth-child(2) > div.card-deck > div > div > img{
+  width:100%;
+}
+
+#root > div:nth-child(2) > div.card-deck > div > img{
+  width: 70%;
+  
+  align-self: center;
+
+  
+}
+#root > div:nth-child(2) > div.card-deck > div > p{
+  
+  font-size: 35px;
 
 }
