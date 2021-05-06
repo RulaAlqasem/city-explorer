@@ -55,11 +55,16 @@ code {
   margin-left: 426px;
 
 }*/
-.my-2{
-  justify-content: center;
+#root > div > div:nth-child(3) > div{
+  width: fit-content;
+
 
 
 } 
+#root > div:nth-child(2) > div:nth-child(3){
+  margin-left: 540px;
+
+}
 #root > div:nth-child(2) > div.card-deck > div > div > img{
   width:100%;
 }

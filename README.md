@@ -5,7 +5,7 @@
 
 ## Overview
 
-This Apllication is for exploring location that displys a map for the selected location by the user, The reason for building this application is to fill users need by exploring location around the world.
+This Apllication is for exploring location that displys a map & weather & movie for the selected location by the user, The reason for building this application is to fill users need by exploring location around the world.
 
 ## Getting Started
 
@@ -44,3 +44,14 @@ Finish time: __10 pm___
 Actual time needed to complete: ___4h__
 
 ![Alt Text](work-fllow2.jpg)
+![Alt Text](eeeeeeeeeeee.png)
+
+Name of feature: _______________add MOVIe AND WEATHER api _________________
+
+Estimate of time needed to complete: __9 h___
+
+Start time: _2 pm___
+
+Finish time: __11 pm___
+
+Actual time needed to complete: __7h___
