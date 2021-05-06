@@ -10,6 +10,7 @@ import OurForm from './component/OurForm';
 import Header from './component/Header';
 import Footer from './component/Footer';
 import Weather from './component/Weather';
+import Movie from './component/Movie';
 
 
 
@@ -22,6 +23,7 @@ export class App extends Component {
       show: false,
       text:'',
       weatherForm:[],
+      movie:[],
     
     }
   }
@@ -47,7 +49,7 @@ export class App extends Component {
       
       });
       this.getWE();
-     
+      this.getMovie();
     
     } catch (error) {
       console.log('erroooorrrr')
@@ -71,7 +73,15 @@ export class App extends Component {
       show: true
     })
   }
-
+  getMovie= async ()=>{
+    const myApiUrlMovie = `${process.env.REACT_APP_HOST}/movie?query=${this.state.location} `
+    const showApiUrlMovie = await axios.get(myApiUrlMovie);
+    console.log(showApiUrlMovie.data);
+    this.setState({
+      movie:showApiUrlMovie.data,
+      show: true
+    })
+  }
   render() {
 
 
@@ -89,6 +99,7 @@ export class App extends Component {
               <ImgCard lat={this.state.data.lat} lon={this.state.data.lon} name={this.state.data.display_name} />
            
               <Weather weatherInfo={this.state.weatherForm} />
+            <Movie  movieInfo={this.state.movie}/>
          
             </>
 
